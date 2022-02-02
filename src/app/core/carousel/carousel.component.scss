@@ -1,0 +1,39 @@
+@import url('../../../assets/css/bootstrap.min.css');
+
+#carouselBody {
+    overflow: hidden;
+    background-color: #c4c4c4;
+}
+
+#carouselBody > a > span.icon-carousel {
+    font-size: 60px;
+}
+
+#carouselBody .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+}
+
+.img-banner {
+    content: " ";
+    width: 100%;
+    height: calc(100vw / 5.71);
+    min-height: 100px;
+    max-height: 300px;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-color: #c4c4c4;
+    background-position: center;
+    object-fit: cover;
+}

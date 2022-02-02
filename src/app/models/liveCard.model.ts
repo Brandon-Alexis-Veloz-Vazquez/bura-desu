@@ -4,3 +4,6 @@ export class LiveCard {
     public titulo: string = "";
     public entidadID: number = 0;
 }
+export class BannerJSON {
+    public url: string = "";
+}

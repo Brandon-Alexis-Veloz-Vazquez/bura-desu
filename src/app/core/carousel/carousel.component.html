@@ -1,0 +1,23 @@
+<div id="carouselBody" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselBody" attr.data-slide-to="{{i}}" *ngFor="let img of images; let i = index"
+            [ngClass]="{'active' : i == 0}"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let img of images; let i = index" [ngClass]="{'active' : i == 0}">
+            <img class="img-banner" alt="banner" [src]="img.url">
+            <div class="carousel-caption d-none d-md-block">
+                <h5><b>Prueba de titulo</b></h5>
+                <p>Prueba de subtitulo</p>
+              </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselBody" role="button" data-slide="prev">
+        <span class="material-icons icon-carousel" aria-hidden="true">chevron_left</span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselBody" role="button" data-slide="next">
+        <span class="material-icons icon-carousel" aria-hidden="true">chevron_right</span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

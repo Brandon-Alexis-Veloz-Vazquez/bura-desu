@@ -5,6 +5,8 @@ import { MaterialModule } from '../material.module';
 import { HomeInicioComponent } from './home-inicio/home-inicio.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { LiveCardModule } from '../core/live-card/live-card.module';
+import { CardModule } from '../core/card/card.module';
+import { CarouselModule } from '../core/carousel/carousel.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LiveCardModule } from '../core/live-card/live-card.module';
     CommonModule,
     MaterialModule,
     HomeRoutingModule,
-    LiveCardModule
+    LiveCardModule,
+    CarouselModule,
+    CardModule
   ],
   exports: [
     

@@ -1,0 +1,17 @@
+.pageModel {
+    max-width: 1920px;
+}
+.toolbar-row {
+    background-color: black;
+}
+.tipoGrafia-Toolbar {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tipoGrafia-Toolbar:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

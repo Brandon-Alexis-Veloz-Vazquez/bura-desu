@@ -1,0 +1,13 @@
+<div class="d-table modeloOtros" [ngStyle]="{'width': width, 'height': height, 'backgroundImage':'url('+liveCard.fondo+')'}"
+    (click)="clickCardOption($event)">
+    <div class="d-table-row h-195px">
+        <div class="d-table-cell h-100 w-100">
+            <img [src]="liveCard.logo" class="logoOtro" alt="logo" *ngIf="liveCard.logo != ''">
+        </div>
+    </div>
+    <div class="d-table-row" *ngIf="liveCard.titulo != ''">
+        <div class="d-table-cell titular">
+            <label class="elipsis">{{liveCard.titulo}}</label>
+        </div>
+    </div>
+</div>
