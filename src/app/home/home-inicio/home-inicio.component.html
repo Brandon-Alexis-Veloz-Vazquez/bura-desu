@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col toolbar">
-                <live-card [liveCard]="liveCard" [width]="'100vw'"></live-card>
+                <live-card [liveCard]="liveCard" [width]="'100%'"></live-card>
             </div>
         </div>
         <div class="row">
@@ -25,10 +25,10 @@
                 <ngv-carousel [images]="banner"></ngv-carousel>
             </div>
         </div>
-        <div class="row">
+        <div class="row bg-black p-5">
             <div class="col">
-                <div class="d-flex flex-row">
-                    <div *ngFor="let item of items">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="p-1" *ngFor="let item of items">
                         <card [liveCard]="item"></card>
                     </div>
                 </div>
