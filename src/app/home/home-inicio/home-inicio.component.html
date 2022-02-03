@@ -28,10 +28,15 @@
         <div class="row bg-black p-5">
             <div class="col">
                 <div class="d-flex flex-wrap justify-content-center">
-                    <div class="p-1" *ngFor="let item of items">
+                    <div class="p-1" [ngClass]="idx > 4 && items.length > 5? 'push':'element'" id="{{'card-' + idx}}" *ngFor="let item of items; let idx = index">
                         <card [liveCard]="item"></card>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row bg-black">
+            <div class="col">
+                <footer></footer>
             </div>
         </div>
     </div>

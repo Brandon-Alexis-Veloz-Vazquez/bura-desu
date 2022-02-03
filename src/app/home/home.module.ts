@@ -7,6 +7,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { LiveCardModule } from '../core/live-card/live-card.module';
 import { CardModule } from '../core/card/card.module';
 import { CarouselModule } from '../core/carousel/carousel.module';
+import { FooterModule } from '../core/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselModule } from '../core/carousel/carousel.module';
     HomeRoutingModule,
     LiveCardModule,
     CarouselModule,
-    CardModule
+    CardModule,
+    FooterModule
   ],
   exports: [
     
