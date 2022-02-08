@@ -15,9 +15,6 @@
     color: black;
     cursor: pointer;
 }
-.bg-black {
-    background-color: black;
-}
 .element {
     margin-top: auto;
 }
@@ -26,4 +23,10 @@
 }
 .w-100 {
     width: 100% !important;
+}
+.psAbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 100;
 }

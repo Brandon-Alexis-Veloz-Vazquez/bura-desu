@@ -1,43 +1,43 @@
-<div class="box d-flex flex-column pageModel" [class.mobile]="mobileQuery.matches">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col toolbar">
-                <live-card [liveCard]="liveCard" [width]="'100%'"></live-card>
+    <div class="box d-flex flex-column pageModel home" [class.mobile]="mobileQuery.matches">
+        <div class="container-fluid dp-content psAbs">
+            <div class="row">
+                <div class="col toolbar">
+                    <live-card [liveCard]="liveCard" [width]="'100%'"></live-card>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col toolbar-row">
-                <div class="d-table-row">
-                    <div class="d-table-cell">
-                        <div class="d-flex flex-row">
-                            <div class="p-2 tipoGrafia-Toolbar">Home</div>
-                            <div class="p-2 tipoGrafia-Toolbar">Features</div>
-                            <div class="p-2 tipoGrafia-Toolbar">Pricing</div>
-                            <div class="p-2 tipoGrafia-Toolbar">FAQs</div>
-                            <div class="p-2 tipoGrafia-Toolbar">About</div>
+            <div class="row">
+                <div class="col toolbar-row">
+                    <div class="d-table-row">
+                        <div class="d-table-cell">
+                            <div class="d-flex flex-row">
+                                <div class="p-2 tipoGrafia-Toolbar">Home</div>
+                                <div class="p-2 tipoGrafia-Toolbar">Features</div>
+                                <div class="p-2 tipoGrafia-Toolbar">Pricing</div>
+                                <div class="p-2 tipoGrafia-Toolbar">FAQs</div>
+                                <div class="p-2 tipoGrafia-Toolbar">About</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <ngv-carousel [images]="banner"></ngv-carousel>
+            <div class="row">
+                <div class="col">
+                    <ngv-carousel [images]="banner"></ngv-carousel>
+                </div>
             </div>
-        </div>
-        <div class="row bg-black p-5">
-            <div class="col">
-                <div class="d-flex flex-wrap justify-content-center">
-                    <div class="p-1" [ngClass]="idx > 4 && items.length > 5? 'push':'element'" id="{{'card-' + idx}}" *ngFor="let item of items; let idx = index">
-                        <card [liveCard]="item"></card>
+            <div class="row bg-black p-5">
+                <div class="col">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="p-1" [ngClass]="idx > 4 && items.length > 5? 'push':'element'" id="{{'card-' + idx}}" *ngFor="let item of items; let idx = index">
+                            <card [liveCard]="item"></card>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row w-100 bg-black">
-            <div class="col">
-                <footer></footer>
+            <div class="row w-100 bg-black">
+                <div class="col">
+                    <footer></footer>
+                </div>
             </div>
         </div>
     </div>
-</div>
