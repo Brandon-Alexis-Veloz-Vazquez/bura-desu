@@ -1,5 +1,5 @@
-    <div class="box d-flex flex-column pageModel home" [class.mobile]="mobileQuery.matches">
-        <div class="container-fluid dp-content psAbs">
+    <div class="box d-flex flex-column pageModel" [class.mobile]="mobileQuery.matches">
+        <div class="container-fluid psAbs">
             <div class="row">
                 <div class="col toolbar">
                     <live-card [liveCard]="liveCard" [width]="'100%'"></live-card>
@@ -10,11 +10,14 @@
                     <div class="d-table-row">
                         <div class="d-table-cell">
                             <div class="d-flex flex-row">
-                                <div class="p-2 tipoGrafia-Toolbar">Home</div>
-                                <div class="p-2 tipoGrafia-Toolbar">Features</div>
-                                <div class="p-2 tipoGrafia-Toolbar">Pricing</div>
-                                <div class="p-2 tipoGrafia-Toolbar">FAQs</div>
-                                <div class="p-2 tipoGrafia-Toolbar">About</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(1)">Home</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(2)">Reviews</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(3)">Topics</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(4)">Live</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(5)">Herramientas</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(6)">Tienda</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(7)">Juegos</div>
+                                <div class="p-2 tipoGrafia-Toolbar" (click)="redireccion(8)">Consejos</div>
                             </div>
                         </div>
                     </div>

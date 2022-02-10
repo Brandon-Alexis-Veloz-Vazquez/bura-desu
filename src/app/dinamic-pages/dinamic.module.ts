@@ -2,29 +2,32 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
-import { HomeInicioComponent } from './home-inicio/home-inicio.component';
-import { HomeRoutingModule } from './home-routing.module';
+
 import { LiveCardModule } from '../core/live-card/live-card.module';
 import { CardModule } from '../core/card/card.module';
 import { CarouselModule } from '../core/carousel/carousel.module';
 import { FooterModule } from '../core/footer/footer.module';
-import { DinamicModule } from '../dinamic-pages/dinamic.module';
+import { DinamicRoutingModule } from './dinamic-routing.module';
+import { NotaComponent } from './nota/nota.component';
+import { ReviewComponent } from './review/review.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
-    HomeInicioComponent,
+    NotaComponent,
+    ReviewComponent,
+    VideoComponent
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
     MaterialModule,
-    HomeRoutingModule,
+    DinamicRoutingModule,
     LiveCardModule,
     CarouselModule,
     CardModule,
-    FooterModule,
-    DinamicModule
+    FooterModule
   ],
   exports: [
     
@@ -36,4 +39,4 @@ import { DinamicModule } from '../dinamic-pages/dinamic.module';
     
   ]
 })
-export class HomeModule { }
+export class DinamicModule { }

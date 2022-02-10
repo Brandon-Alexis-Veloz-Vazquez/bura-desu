@@ -1,5 +1,6 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LiveCard } from 'src/app/models/liveCard.model';
 
 
@@ -18,7 +19,7 @@ export class HomeInicioComponent implements OnInit {
 
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(private router: Router,changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addEventListener("change", this._mobileQueryListener);
@@ -88,5 +89,19 @@ export class HomeInicioComponent implements OnInit {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeEventListener("change", this._mobileQueryListener);
+  }
+
+  redireccion(tipo: number) {
+    switch(tipo) {
+      case 1:
+        this.router.navigate(['home/inicio']);
+      break;
+      case 2: case 3: case 4: case 5: case 6: case 7: case 8:
+        this.router.navigate(['home/dinamic/nota']);
+      break;
+      default:
+        this.router.navigate(['home/inicio']);
+      break;
+    }
   }
 }
