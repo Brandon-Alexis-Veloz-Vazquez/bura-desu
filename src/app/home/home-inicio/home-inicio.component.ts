@@ -25,7 +25,6 @@ export class HomeInicioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.invokeParticles();
     this.liveCard = {
       logo: "",
       fondo: "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg",
@@ -89,9 +88,5 @@ export class HomeInicioComponent implements OnInit {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeEventListener("change", this._mobileQueryListener);
-  }
-
-  public invokeParticles(): void {
-    particlesJS('particles-js', '../assets/json/particlesjs-config.json', function() {});
   }
 }
